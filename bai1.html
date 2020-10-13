@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day fibonacci</title>
+</head>
+<body>
+<script>
+    function fibonacci(f) {
+        let f1 = 0;
+        let f2 = 0;
+        let fn = 1;
+        for (fi = 2; fi < f; fi++){
+            f1 = f2;
+            f2 = fn;
+            fn = f2 + f1;
+        }return fn;
+    }
+    for (fi = 0; fi <=21; fi++){
+        document.write(fibonacci(fi), "<br/>");
+    }
+</script>
+</body>
+</html>
